@@ -1,0 +1,247 @@
+/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$template-angular-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
+$template-angular-accent: mat.m2-define-palette(
+  mat.$m2-pink-palette,
+  A200,
+  A100,
+  A400
+);
+
+// The warn palette is optional (defaults to red).
+$template-angular-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$template-angular-theme: mat.m2-define-light-theme(
+  (
+    color: (
+      primary: $template-angular-primary,
+      accent: $template-angular-accent,
+      warn: $template-angular-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($template-angular-theme);
+html,
+body {
+  height: 100%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+.custom-index-five-slider .owl-theme .owl-dots .owl-dot span {
+  display: none !important;
+}
+.browse-cat-slider .owl-carousel .owl-nav .owl-prev {
+  border: 1px solid #e9f0ff;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background: #e9f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: -4%;
+  top: 12px;
+}
+.browse-cat-slider .owl-carousel .owl-nav .owl-next {
+  border: 1px solid #e9f0ff;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background: #e9f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 12px;
+  right: -4%;
+}
+.browse-cat-slider .owl-carousel .owl-nav .owl-next:hover {
+  background: #1e88e5;
+  color: #fff;
+}
+.browse-cat-slider .owl-carousel .owl-nav .owl-prev:hover {
+  background: #1e88e5;
+  color: #fff;
+}
+.job-area-slider .owl-carousel .owl-nav .owl-prev {
+  border: 1px solid #e9f0ff;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background: #e9f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: -4%;
+  top: 162px;
+}
+.job-area-slider .owl-carousel .owl-nav .owl-next {
+  border: 1px solid #e9f0ff;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  background: #e9f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: 162px;
+  right: -4%;
+}
+.entry-meta li i {
+  margin-right: 3px;
+}
+mat-option mat-pseudo-checkbox.mat-pseudo-checkbox {
+  display: none;
+}
+mat-option.mat-mdc-option.mdc-list-item--selected:not(
+    .mdc-list-item--disabled
+  ):not(.mat-mdc-option-multiple) {
+  background-color: #1e88e5;
+}
+mat-option.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled)
+  .mdc-list-item__primary-text {
+  color: #fff;
+}
+mat-option.mat-mdc-option.mdc-list-item {
+  min-height: 35px;
+}
+mat-option.mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+  background-color: #1e88e5;
+  color: #fff;
+}
+app-home2 .view-student-list {
+  display: none;
+}
+.search-input .btn.btn-searchset img {
+  width: 16px;
+}
+.skilled-mentors .owl-carousel .owl-nav .owl-prev {
+  display: none;
+}
+.skilled-mentors .owl-carousel .owl-nav .owl-next {
+  display: none;
+}
+.sidebar-right {
+  position: sticky;
+  top: 100px;
+}
+.profile-sidebar {
+  position: sticky;
+  top: 100px;
+}
+ul.main-nav li.custom-list {
+  margin-right: 30px;
+}
+.most-popular .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  display: none;
+}
+.section.trending-courses .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  display: none;
+}
+.featured-instructor .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  display: none;
+}
+.section.our-blog .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  display: none;
+}
+.customer-slider.owl-theme .owl-dots .owl-dot.active {
+  background: #1e88e5;
+}
+.customer-slider.owl-theme .owl-dots .owl-dot {
+  width: 26px;
+  height: 6px;
+  background: #7d858f;
+  margin-right: 5px;
+  border-radius: 30px;
+}
+.customer-slider .owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  display: none;
+}
+app-home2 .view-student-list {
+  display: none;
+}
+.table_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  .pagination_section {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.bs-datepicker.theme-green .bs-datepicker-head {
+  background-color: #1e88e5;
+}
+.bs-datepicker.theme-green .bs-datepicker-body table td.week span {
+  color: #1e88e5;
+}
+.search-set .search-input {
+  position: relative;
+}
+.search-set .search-input .btn-searchset {
+  padding: 2px;
+  border-radius: 50px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+.search-set .search-input input[type="search"] {
+  background: transparent;
+  height: 40px;
+  border: 1px solid rgba(145, 158, 171, 0.32);
+  width: 200px;
+  border-radius: 5px;
+  padding: 0 15px 0 30px;
+  font-size: 14px;
+}
+.search-set .search-input .btn-searchset {
+  padding: 2px;
+  border-radius: 50px;
+  position: absolute;
+  top: 7px;
+  left: 42px;
+}
+.search-input .dataTables_filter {
+  margin-left: 35px;
+  margin-top: 45px;
+}
+.hide-sub-menu {
+  display: none;
+  transition: all 0.5s;
+}

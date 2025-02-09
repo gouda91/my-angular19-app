@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Carpentry",
+            "since": "Wed May 20 2023 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user20.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Cleaning",
+            "since": "Wed Sep 19 2021 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user19.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Computer",
+            "img": "assets/img/user/user18.jpg",
+            "since": "Wed Jul 06 2023 09:41:48 GMT+0530 (India Standard Time)"
+        },
+        {
+            "id": 4,
+            "name": "Construction",
+            "since": "Wed Feb 07 2023 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user17.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Electrical",
+            "since": "Wed May 12 2022 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user16.jpg"
+        },
+       
+        {
+            "id": 6,
+            "name": "Interior",
+            "img": "assets/img/user/user15.jpg",
+            "since": "Wed Mar 06 2023 09:41:48 GMT+0530 (India Standard Time)"
+        },
+        {
+            "id": 7,
+            "name": "Painting",
+            "img": "assets/img/user/user14.jpg",
+            "since": "Wed Jul 06 2023 09:41:48 GMT+0530 (India Standard Time)"
+        },
+        {
+            "id": 8,
+            "name": "Doctor",
+            "img": "assets/img/user/user13.jpg",
+            "since": "Wed Jul 06 2023 09:41:48 GMT+0530 (India Standard Time)"
+        },
+        {
+            "id": 9,
+            "name": "Mechanic",
+            "since": "Wed May 27 2023 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user12.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Invertor",
+            "since": "Wed May 21 2023 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user11.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Plumber",
+            "since": "Wed Apr 27 2023 09:41:48 GMT+0530 (India Standard Time)",
+            "img": "assets/img/user/user9.jpg"
+        }
+    ],
+    "totalData": 11
+}
