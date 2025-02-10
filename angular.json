@@ -30,23 +30,17 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/@fortawesome/fontawesome-free/css/brands.css",
-              "node_modules/@fortawesome/fontawesome-free/css/solid.css",
-              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "node_modules/slick-carousel/slick/slick.css",
-              "node_modules/slick-carousel/slick/slick-theme.css",
-              "node_modules/aos/dist/aos.css",
-              "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss",
-              "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+             "src/assets/css/bootstrap.min.css",
+              "src/assets/plugins/fontawesome/css/fontawesome.min.css",
+              "src/assets/plugins/fontawesome/css/all.min.css",
+              "src/assets/plugins/aos/aos.css",
+              "src/assets/css/bootstrap-datetimepicker.min.css",
+              "src/assets/plugins/select2/css/select2.min.css",
               "src/assets/css/style.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/aos/dist/aos.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/slick-carousel/slick/slick.min.js"]
+            
+            ]
           },
           "configurations": {
             "production": {
@@ -54,7 +48,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -100,9 +94,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": [],
             "scripts": []
           }
         }

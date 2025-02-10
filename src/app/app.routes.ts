@@ -11,6 +11,7 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
 import { ProfileComponent } from './pages/profile/profile.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { MessagesComponent } from './pages/messages/messages.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,8 @@ export const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
 
+  { path: 'home', component: HomeComponent },
+  
   // Dashboard Routes (Under Dashboard Layout)
   {
     path: 'dashboard',
