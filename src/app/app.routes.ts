@@ -12,6 +12,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { MessagesComponent } from './pages/messages/messages.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BookingComponent } from './pages/booking/booking.component';
+import { SubscriptionComponent } from './pages/subscription/subscription.component';
 
 
 export const routes: Routes = [
@@ -20,7 +22,9 @@ export const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
 
   { path: 'home', component: HomeComponent },
-  
+  { path: 'booking', component: BookingComponent },
+  { path: 'subscription', component: SubscriptionComponent },
+
   // Dashboard Routes (Under Dashboard Layout)
   {
     path: 'dashboard',

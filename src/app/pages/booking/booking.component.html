@@ -1,0 +1,118 @@
+<div class="breadcrumb-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-12">
+                <h2 class="breadcrumb-title">Booking</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content" style="transform: none; min-height: 181px;">
+    <div class="container-fluid" style="transform: none;">
+        <div class="row" style="transform: none;">
+            <div class="col-md-7 col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Checkout Form -->
+                        <form action="booking-success.html">
+                            <div class="payment-widget">
+                                <h4 class="card-title">Card Details</h4>
+                                <div class="payment-list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group card-label">
+                                                <label for="card_name">Name on Card</label>
+                                                <input class="form-control" id="card_name" type="text" disabled value="John Doe">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group card-label">
+                                                <label for="card_number">Card Number</label>
+                                                <input class="form-control" id="card_number" type="text" disabled value="**** **** **** 1234">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="expiry_month">Expiry Month</label>
+                                                <input class="form-control" id="expiry_month" type="text" disabled value="08">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="expiry_year">Expiry Year</label>
+                                                <input class="form-control" id="expiry_year" type="text" disabled value="26">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="cvv">CVV</label>
+                                                <input class="form-control" id="cvv" type="text" disabled value="***">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Section -->
+                                <div class="submit-section mt-4">
+                                    <button type="submit" class="btn btn-primary submit-btn">Confirm and Pay</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /Checkout Form -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-4 theiaStickySidebar">
+                <div class="card booking-card">
+                    <div class="card-header">
+                        <h4 class="card-title">Booking Summary</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- Booking Course Info -->
+                        <div class="booking-info">
+                            <h5>Course Name:</h5>
+                            <p>Advanced Web Development</p>
+                            <h5>Tutor Name:</h5>
+                            <p>Dr. Emily Johnson</p>
+                        </div>
+                        <!-- Booking Summary Details -->
+                        <div class="booking-summary">
+                            <div class="booking-item-wrap">
+                                <ul class="booking-date">
+                                    <li>Date <span>16 Nov 2024</span></li>
+                                    <li>Time <span>10:00 AM</span></li>
+                                </ul>
+                                <ul class="booking-fee">
+                                    <li>Course Fee <span>$200</span></li>
+                                    <li>Discount <span>-$20</span></li>
+                                </ul>
+                                <!-- Promo Code Section in Summary -->
+                                <div class="promo-code mt-3">
+                                    <h5>Apply Promo Code</h5>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Enter Promo Code">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-primary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Booking Total -->
+                                <div class="booking-total">
+                                    <ul class="booking-total-list">
+                                        <li>
+                                            <span>Total</span>
+                                            <span class="total-cost">$190</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Booking Summary Details -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

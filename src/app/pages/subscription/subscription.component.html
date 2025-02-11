@@ -1,0 +1,146 @@
+
+<div class="breadcrumb-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-12">
+                
+                <h2 class="breadcrumb-title">Subscription </h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content" style="transform: none; min-height: 181px;">
+    <div class="container-fluid" style="transform: none;">
+        <div class="row" style="transform: none;">
+            <div class="col-md-7 col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <!-- Subscription Form -->
+                        <form action="subscription-success.html">
+                            
+                            <div class="payment-widget">
+                                <h4 class="card-title">Choose Your Subscription Plan</h4>
+                                <p>Select a subscription plan that best fits your needs. Please note that the subscription fee is separate from course fees.</p>
+                                
+                                <!-- Subscription Options -->
+                                <div class="d-flex justify-content-between">
+                                    <label class="subscription-option">
+                                        <input type="radio" name="subscription-plan" value="monthly" checked="">
+                                        <strong>Monthly Plan:</strong> $29.99 per month
+                                        <p>Enjoy full access to our services with a monthly commitment.</p>
+                                    </label>
+                                    <label class="subscription-option">
+                                        <input type="radio" name="subscription-plan" value="yearly">
+                                        <strong>12-Month Plan:</strong> $299.99 for a year
+                                        <p>Includes 3 extra months free! Pay for 12 months and get 15 months of access.</p>
+                                    </label>
+                                </div>
+                                <!-- /Subscription Options -->
+                                
+                                <!-- Stripe Payment -->
+                                <div class="payment-list">
+                                    <label class="payment-radio stripe-option">
+                                        
+                                        
+                                         Pay with Credit/Debit Card
+                                    <img src="https://e7.pngegg.com/pngimages/633/870/png-clipart-powerd-by-stripe-payment-methods-credit-cards-tech-companies-payments-thumbnail.png" alt="Stripe Logo" style="height: 24px;"></label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group card-label">
+                                                <label for="card_name">Name on Card</label>
+                                                <input class="form-control" id="card_name" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group card-label">
+                                                <label for="card_number">Card Number</label>
+                                                <input class="form-control" id="card_number" placeholder="1234 5678 9876 5432" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="expiry_month">Expiry Month</label>
+                                                <input class="form-control" id="expiry_month" placeholder="MM" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="expiry_year">Expiry Year</label>
+                                                <input class="form-control" id="expiry_year" placeholder="YY" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group card-label">
+                                                <label for="cvv">CVV</label>
+                                                <input class="form-control" id="cvv" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Stripe Payment -->
+                                
+                                <!-- Terms Accept -->
+                                <div class="terms-accept">
+                                    <div class="custom-checkbox">
+                                       <input type="checkbox" id="terms_accept">
+                                       <label for="terms_accept">I have read and accepted <a href="#">Terms &amp; Conditions</a></label>
+                                    </div>
+                                </div>
+                                <!-- /Terms Accept -->
+                                
+                                <!-- Submit Section -->
+                                <div class="submit-section mt-4">
+                                    <button type="submit" class="btn btn-primary submit-btn">Subscribe Now</button>
+                                </div>
+                                <!-- /Submit Section -->
+                            </div>
+                        </form>
+                        <!-- /Subscription Form -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-5 col-lg-4 theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 503.854px;">
+                <!-- Subscription Summary -->
+                <div class="card booking-card">
+                    <div class="card-header">
+                        <h4 class="card-title">Subscription Summary</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="booking-summary">
+                            <div class="booking-item-wrap">
+                                <ul class="booking-date">
+                                    <li>Plan <span id="selected-plan">Monthly</span></li>
+                                </ul>
+                                <ul class="booking-fee">
+                                    <li>Subscription Fee <span id="subscription-fee">$29.99</span></li>
+                                    <li>Discount <span id="discount-amount">$0.00</span></li>
+                                </ul>
+                                
+                                <!-- Promo Code Updated -->
+                                <div class="form-group mt-3 d-flex align-items-center">
+                                    <input class="form-control w-75" id="promo_code" type="text" placeholder="Enter promo code">
+                                    <button class="btn btn-secondary ml-2" id="apply_promo">Apply</button>
+                                </div>
+                                <p id="promo_message" class="text-success mt-1"></p>
+                                <!-- /Promo Code -->
+                                
+                                <p><strong>Note:</strong> The subscription covers membership benefits only. Each course has its own separate fee.</p>
+                                <div class="booking-total">
+                                    <ul class="booking-total-list">
+                                        <li>
+                                            <span>Total</span>
+                                            <span class="total-cost" id="total-cost">$29.99</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Subscription Summary -->
+            </div>
+        </div>
+    </div>
+</div>
